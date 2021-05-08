@@ -33,12 +33,12 @@ SaliencyMix는 Saliency를 이용해 중요한 정보를 추출한 뒤 합성한
 하지만 논문을 구현한 코드를 보니, 첫번째 이미지의 Saliency 정보를 모든 이미지에 적용한다.
 좀 의문이 가는 부분이다.
 
-## Random Erase
+## Random Erase [[Link]](https://arxiv.org/abs/1708.04896)
 
 Random한 크기를 영역을 잡아서 장애물을 만든다. 이 점이 CutOut과 차별되는 점이다.
 Random Erase는 CutOut과는 다르게 삭제된 영역 안을 평균값이나 랜덤값으로 채운다.
 
-## Rand-augment
+## Rand-augment [[Link]](https://openaccess.thecvf.com/content_CVPRW_2020/papers/w40/Cubuk_Randaugment_Practical_Automated_Data_Augmentation_With_a_Reduced_Search_Space_CVPRW_2020_paper.pdf)
 
 Auto-augment의 경량화 벼전이다. N번의 변환을 수행하고 K개의 변환이 존재한다. 따라서 K^N의 경우의 수가 있다. N번의 이미지 변환 방법을 유니폼 디스트리뷰션으로 랜덤하게 적용한다.
 
