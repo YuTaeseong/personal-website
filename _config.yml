@@ -12,7 +12,6 @@ user :
   hireable : true
   email : "yugeeklab@gmail.com"
 
-
 plugins:
   - jekyll-octicons
   - jekyll-github-metadata
